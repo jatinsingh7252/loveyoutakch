@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ff4d6d">
+  <meta name="description" content="A special Valentine's Day message for Takch">
+  <title>Will You Be My Valentine, Takch? 💖</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-theme="light">
+  <main class="container" role="main">
+    <h1>Will you be my Valentine, <span class="name-highlight">Takch</span>? <span class="accent">💘</span></h1>
+    <p class="lead">Pick one — but try not to let the No escape 😉</p>
+
+    <div class="valentine-quotes">
+      <p class="quote-line">"Takch, you are my today and all of my tomorrows." 💕</p>
+      <p class="quote-line">"In your smile, Takch, I see something more beautiful than the stars." ✨</p>
+      <p class="quote-line">"Every moment with you, Takch, is like a beautiful dream come true." 💖</p>
+    </div>
+
+    <div class="buttons" role="group" aria-label="Answer choices">
+      <button id="yesBtn" class="btn btn-primary" aria-label="Yes, I will be your Valentine">
+        <span>Yes</span>
+        <span aria-hidden="true">💖</span>
+      </button>
+      <button id="noBtn" class="btn btn-secondary" aria-label="No, thank you">
+        <span>No</span>
+        <span aria-hidden="true">💔</span>
+      </button>
+    </div>
+  </main>
+
+  <div id="celebration" class="overlay hidden" role="status" aria-live="polite" aria-hidden="true">
+    <div class="modal">
+      <h2>I knew it <span aria-hidden="true">💗</span></h2>
+      <div class="popup-hearts" aria-hidden="true">
+        <span class="popup-heart">💖</span>
+        <span class="popup-heart">💘</span>
+        <span class="popup-heart">💝</span>
+        <span class="popup-heart">💞</span>
+      </div>
+      <p class="lovable-message">You are the best thing that happened to me 💕</p>
+      <img src="us.jpg" alt="Us Together" loading="lazy">
+      <div id="confetti" class="confetti"></div>
+      <button id="closeBtn" class="btn btn-outline">Close</button>
+    </div>
+  </div>
+
+  <!-- Floating hearts background -->
+  <div class="floating-heart">💖</div>
+  <div class="floating-heart">💕</div>
+  <div class="floating-heart">💗</div>
+  <div class="floating-heart">💝</div>
+  <div class="floating-heart">💘</div>
+  <div class="floating-heart">💞</div>
+
+  <audio id="bgMusic" loop autoplay>
+    <!-- Add your music file here - replace 'music.mp3' with your actual music file -->
+    <source src="music.mp3" type="audio/mpeg">
+    <source src="music.ogg" type="audio/ogg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
